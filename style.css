@@ -50,6 +50,11 @@ nav {
     
 }
 
+.listed {
+    display: flex;
+    flex-direction: column;
+}
+
 a {
     color:#df7126;
     margin: 10px;
