@@ -1,0 +1,88 @@
+body {
+    padding: 10px;
+    background-color: #272442;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rebeccapurple;
+}
+
+* {
+    font-weight: bolder;
+}
+
+p {
+    color: white;
+}
+
+.one .two p#inside-p {
+    filter: blur(1px);
+    background-color: black;
+    color: white;
+}
+
+.one .two p {
+    background-color: yellow;
+    color: white;
+}
+
+div#text-stuff p::selection {
+    background-color: black;
+    color: orange;
+}
+
+div#text-stuff p::first-letter{
+    font-size: 3em;
+}
+
+div#text-stuff p#hover:hover {
+    color: red;
+}
+
+input#focus-1:hover {
+    filter: blur(8px);
+    animation: spin 1s;
+    animation-iteration-count: infinite;
+    
+}
+
+div#child-stuff:hover{
+    font-size: 32px;
+    background-color: purple;
+}
+
+div#child-stuff h3:hover{
+    font-size: 8px;
+    text-decoration: overline;
+
+}
+
+div#child hr {
+    height: 10px;
+    background-color: black;
+}
+
+div#child hr:first-child:hover {
+    background-color: aquamarine;
+    height: 500px;
+    
+}
+
+div#child hr:last-child:hover {
+    background-color: red;
+    height: 500px;
+    
+}
+
+@keyframes spin {
+
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100%{transform: rotate(360deg);}
+    
+}

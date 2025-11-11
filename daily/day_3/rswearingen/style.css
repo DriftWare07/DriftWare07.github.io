@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: #042131;
+    font-family: "Barlow";
+    
+    color: #a74104;
+    background-image: url("https://images.steamusercontent.com/ugc/2058741574591785827/2336691F8F4832C7E7C2BA1E8240DA78C07A9BCE/");
+    border: solid 1px black;
+    border-radius: 16px;
+    
+    
+}
+
+header{
+    background-color: #042131;
+    padding: 32px;
+    border: solid 0px ;
+    border-radius: 10px;
+    
+}
+
+main {
+    margin-left: 16px;
+}
+
+p {
+    padding-left: 17px;
+    
+}
+
+img {
+    margin-left: 17px;
+    border: solid 6px #042131;
+    border-radius: 10px;
+    
+}
+
+p#copy {
+    font-size: 11px;
+}
+
+p#copy:hover {
+    filter: sepia();
+}
+
+.blurImage {
+    filter: blur(10px);
+}
+
+.blurImage:hover {
+    filter: blur(0px);
+    animation: grow 60s;
+}
+
+@keyframes grow {
+    0%{height: 256px;}
+    100%{height: 1000px};
+    
+}
+

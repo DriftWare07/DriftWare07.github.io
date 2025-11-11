@@ -1,0 +1,110 @@
+        /* Name:  PUT YOUR NAME HERE */
+        /* Date: November 6, 2025 */
+        /* Course: ITSE-1311.001 */
+        /* Assignment: Part 0.39 in Module Part 0 */
+        
+        :root {
+            --background_1: #E5CA66;
+            --background_2: #6397e4;
+            --color_1: #e9da0a;
+            --color_2: #36665F;
+            --border-color: #665C36;
+
+            /* Global variable */
+            --spacing-unit: 1rem;
+        }
+
+        body {
+            /* 1 */
+            background-color: var(--background_1); 
+        }
+
+        img {
+            /* 2 */
+            width: 90%; */
+             border: 1px solid var(--border-color);
+            border-radius: 7px; 
+            margin: 5px;
+        }
+
+        div {
+            /* float: left; */
+            background-color: var(--background_2);
+
+            /* 3 */
+             border-radius: 7px;
+        }
+
+        div p {
+            /* 4 */
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--color_2);
+        }
+
+        div.flexbox-item {
+            /* 5 */
+            border: 5px ridge var(--border-color);
+            width: 150px;
+             padding: 5px;
+            margin: 5px;
+            background-color: var(--color_1);
+            /* optional */
+            border-radius: 7px;
+        }
+
+        footer p {
+            font-size: 0.8em;
+        }
+
+        nav a {
+            font-size: 1.2em;
+        }
+
+        /* Main Event! */
+
+        div.container {
+            /* optional */
+            /* background-color: gray; */
+            /* background-color: var(--background_2); */
+            /* 1 */
+            display: flex;
+            /* 2 */
+
+            /* Just mention this */
+            height: 70vh;
+
+            /* 3 */
+            /* Pick one of these: */
+            /* justify-content: flex-end; */
+            /* justify-content: flex-start; */
+
+            /* 4 */
+            /*justify-content: center;*/
+
+            /* 5 */
+            flex-wrap: wrap;
+
+            /* 6 */
+            justify-content: space-around;
+            /* 7 */
+            /*align-items: center;*/
+            /* 8 */
+            align-items: stretch;
+            /* 9 */
+            /* align-items: end; */
+            /* 10 */
+            /* align-items: flex-start; */
+
+            /* Don't do A or B */
+            /*   A) show that the default is "flex-direction : row;" */
+            /*   flex-direction: row; */
+
+            /*   B) Mess with the height  */
+            /*      height: 150vh; */
+
+            /* 11 */
+            /* flex-direction: row; */
+        }
+
+        /* eof */

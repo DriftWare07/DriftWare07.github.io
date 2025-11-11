@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+    background-color: #222034;
+    padding: 10px;
+
+    
+}
+
+html {
+    font-family: 'SUSE Mono';
+}
+
+div {
+    
+   
+    border-radius: 16px;
+    margin: 10px;
+    padding: 10px;
+}
+
+header {
+    background-color: #45283c;
+    padding: 10px;
+    border-radius: 16px;
+    
+}
+
+
+img {
+    border-radius: 30px;
+    size: auto;
+    
+}
+
+#img-div {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+p::first-line {
+    font-size: 64px;
+}
+
+h1 {
+    text-align: center;
+}

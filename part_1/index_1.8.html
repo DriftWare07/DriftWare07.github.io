@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Name: R. Alex Swearingen -->
+<!-- Date: 11/2/2025 -->
+<!-- Course: ITSE 1311.001 -->
+<!-- Assignment: Part 1.8 Introduction to Forms-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <style>
+        fieldset,
+        legend,
+        textarea,
+        select,
+        input[type="date"],
+        input[type="color"],
+        input[type="submit"],
+        input[type="reset"] {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Pizza Order Form
+        <hr>
+    </header>
+
+    <div>
+
+        <form action="#" method="GET" name="inputForm" id="inputForm">
+
+            <fieldset>
+                <legend>Delivery Details</legend>
+                Extra Toppings: <br>
+                <select name="extra" size="4" multiple>
+                    <option value="cheese">Extra Cheese</option>
+                    <option value="pepperoni">Extra Pepperoni</option>
+                    <option value="onion">Extra Onion</option>
+                    <option value="salt">Extra Salt</option>
+                    <option value="pepper">Extra Pepper</option>
+                </select>
+                <br>
+                Delivery Date
+                <input type="date" name="delivery">
+                <br>
+                Crust Color
+                <input type="color" name="crustColor">
+            </fieldset>
+            <br>
+            <fieldset>
+
+                <legend>Pizza Selection</legend>
+                Pepperoni <input type="checkbox" name="topping" value="pep" checked><br>
+                Onion <input type="checkbox" name="topping" value="onion"><br>
+                Cheese <input type="checkbox" name="topping" value="cheese"><br>
+                <br>
+                Thin Crust <input type="radio" name="crust" value="thin" checked>
+                Thick Crust <input type="radio" name="crust" value="thick">
+                NO Crust <input type="radio" name="crust" value="none">
+                <br>
+                <textarea name="comments" placeholder="special instructions"></textarea>
+                <br>
+
+                <input type="submit" value="Submit Form">
+                <input type="reset" value="Reset Form">
+            </fieldset>
+
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>

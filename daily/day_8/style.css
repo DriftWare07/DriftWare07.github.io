@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Linefont:wght@4..1000&family=Pixelify+Sans:wght@400..700&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@font-face {
+  font-family: "Cyberpunk"; /* Choose a name for your font */
+  src: local("Ryzes"), /* Use the exact font name installed on the user's system */
+       url("Ryzes-ax92x.ttf") format("ttf"), /* Fallback for when the local font isn't found */
+       url("path/to/myLocalFont.woff") format("woff");
+  /* Add other formats like .ttf, .otf if needed */
+  font-weight: normal; /* Optional: specify font weight */
+  font-style: normal; /* Optional: specify font style */
+}
+
+body {
+    background-color: midnightblue;
+    font-family: "Source Sans 3";
+    margin: auto;
+    padding: 16px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(15, 15, 68);
+    padding: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+p#test-font {
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+}
+
+#font-change {
+    font-size: 64px;
+    color: yellow;
+    font-family: 'Cyberpunk';
+    text-shadow: 5px 5px 0px cyan;
+    text-indent: 40px;
+}
+
+p#line-height {
+    line-height: 175%;
+}
+
+div.box-stuff {
+    font-size: 1.5rem;
+    width: 70%;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    border: white 24px groove;
+    box-shadow: inset 5px 5px 8px lawngreen;
+    color: lawngreen;
+    font-family: 'Pixelify Sans';
+}
+
+div.adjust {
+    width: 40;
+    height: 150px;
+    overflow: scroll;
+    font-size: 64px;
+}
+
+ol {
+    list-style-type: upper-alpha;
+}
+
+main {
+    padding: 10px;
+}
+
+table {
+    border: 1px white solid;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+
+ tr, td{
+    border: 1px white solid;
+    border-top: 10px;
+    border-left: 0px;
+    
+    margin: auto;
+    padding: 10px;
+}
+

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+    font-family: "Sansation";
+    background-color: #222034;
+    color: white;
+
+    margin: 20px;
+}
+
+marquee {
+    overflow: visible;
+}
+
+.bbq {
+    animation: flash;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#navbar{
+    background-color: black;
+    border: solid;
+    border-color: #ff8f27;
+    border-radius: 32px;
+    border-width: 2px;
+
+    padding-left: 10px;
+    
+    margin-right: 20px;
+
+    display: flex;
+    flex-direction: row;
+
+    position: sticky;
+    margin-bottom: 20px;
+
+}
+
+button {
+    padding: 10px;
+    background-color: #222034;
+    color: white;
+    border-radius: 32px;
+}
+
+#seizure-zone{
+    animation: seizure;
+    animation-duration: 300ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes seizure {
+    0%{color: white;}
+    25%{color: pink;}
+    50%{color: mediumspringgreen;}
+    75%{color: lightcoral;}
+    100%{color: cyan;}
+}
+
+@keyframes flash {
+    0%{color: white;}
+    50%{color: red;}
+    100%{color: white;}
+}

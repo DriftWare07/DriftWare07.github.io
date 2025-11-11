@@ -1,0 +1,13 @@
+http://127.0.0.1:5500/part_1/index_1.8.html
+?
+extra=onion
+&
+delivery=2025-11-22
+&
+crustColor=%23ee00ff
+&
+topping=pep
+&
+crust=thick
+&
+comments=make+it+extra+purple#

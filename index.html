@@ -1,113 +1,78 @@
+<!-- Name: R. Alex Swearingen -->
+<!-- Date: 9/18/2025 -->
+<!-- Course: ITSE 1311.001 -->
+<!-- Assignment: Part 0.21 ⬅ Final Project Structure -->
+<!-- File:  Main Website -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>to do;</title>
-
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-
-body{
-  justify-content: center;
-  background-image: linear-gradient(90deg, #020024 0%, #090979 35%, purple 100%);
-  font-family: "Open Sans", system-ui;
-  color: white;
-  border: solid 1px black;
-  border-radius: 32px;
-  
-  padding-left: 16px;
-}
-
-h1{
-  color: white;
-  font-family: "Open Sans", system-ui;
-  font-size: 32px;
-  
-  
-}
-
-ul {
-  
-  padding-left: 32px;
-  
-    font-size: 16px;
-}
-
-li {
-  margin-bottom: 8px;
-  animation-name: intro-right;
-  animation-duration: 1s;
-  
-}
-
-p {
-  font-size: 8px;
-}
-
-div{
-  border: solid, 4px;
-  border-radius: 24px;
-  border-right: white;
-  width: 256px;
-  
-
-
-  
-  
-  
- 
-  padding: 3px;
-}
-
-
-
-.done {
-  text-decoration: line-through;
-}
-
-@keyframes intro-right {
-  0%{
-    padding-left: 32px;
-    color: transparent;
-  }
-  
-  100%{
-    padding-left: 0px;
-    color: white;
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main HomePage</title>
+    <link rel="stylesheet" href="/style.css">
 
 </head>
+
 <body>
-<h1 class="bitcount-grid-double">to do;</h1>
-<div>
+    <header>
+        <div id="banner">
+            <h1>>/ DriftWare.net</h1>
+            <p id="random">I will confiscate your opinion do not test me</p>
+        </div>
+        <nav class="window-centered">
+            <a href="./index.html">HOME</a>
+            <a href="./daily/index.html">Daily Files</a>
+            <a href="./part_1/index.html">Part 1 Files</a>
+            <a href="#">My Crazy Life</a>
+            <a href="#">Course Website</a>
+
+        </nav>
+        <hr>
+    </header>
 
 
- <ul>
-   <li>Buy A Car</li>
-   <li>Finish My Degree</li>
-   <li class="done">Learn To Make Games</li>
-   <li>Learn to 3D Model and Animate</li>
-   <li>Release A Commercial Game</li>
-   <li> Master Smalltalk </li>
-   <li> Write a short story</li>
-   <li> find a wife lol </li>
-   <li> Afford A House </li>
-   
-   
-   
-  </ul>
-  
-  
-</div>
+    <aside class="window">
+        <P>Stuff I've worked on:</P>
+        <ul>
+            <li><a href="https://driftware.itch.io/not-a-drill" target="_blank">Not a Drill</a></li>
+
+            <li><a href="https://driftware.itch.io/elevator-panic" target="_blank">Elevator Panic</a></li>
+
+            <li><a href="https://driftware.itch.io/octogame" target="_blank">Octogame</a></li>
+        </ul>
+    </aside>
+
+    <main class="window">
+        <h2>About Me</h2>
+        <p>So all this started back when I was a lil bitty kid and my dad brought home a raspberry pi. I asked him what
+            it did and he said "it's for making virtual machines my son". And of course I'm like 11 so I'm goin "The
+            heck's a virtual machine???". Now, my father wasn't really one for succinct explainations so I didn't really
+            get whatever he explained them to be. All I know is by the time I got my hands on the raspberry pi, I found
+            an old ass version of scratch on that thang. It let me make weird lil games outta blocks of code and this
+            was pure magic to my 11 year old brain. And that was it. I had been inducted into the dark occult generally
+            referred to as 'computer science', and I've been laboring in it's service ever since.</p>
+
+        <p>Of course now I don't speak to computers in block anymore. Now I program things using things like: vague
+            mutterings, compilers and the occasional tail of newt.
+            Nah I'm just messing with you. I don't actually use any of those things, but sometimes I might was well be.
+            These days I be making games in Godot. But sometimes I make a half hearted attempt at learning unity. It's
+            been a few years since I released a game. Currently working on a sequel to my flop game "Not A Drill".
+            Please go play it. it's on the sidebar over there --->
+        </p>
+    </main>
+
+    <div id="gallery"></div>
 
 
 
-<p> this page is like half a joke</p>
 
+    <footer>
+        <!-- Footer information goes here -->
+    </footer>
 </body>
-</html>
+<script src="main.js"></script>
 
+</html>
+<!-- eof -->

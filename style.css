@@ -1,0 +1,151 @@
+/* Name: R. Alex Swearingen*/
+/* Date: 9/18/2025 */
+/* Course: ITSE 1311.001 */
+/* Assignment: Part 0.21 ⬅ Final Project Structure */
+/* File:  Main site CSS file */
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Linefont:wght@4..1000&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Sixtyfour&display=swap');
+
+:root {
+    --background_1: #222034;
+    --background_2: lightblue;
+    --background_3: lightyellow;
+    --nav_color: #594761;
+    --body_padding: 10px;
+    --scanline_size: 24px;
+}
+
+body {
+    background-color:var(--background_1);
+    font-family: Barlow;
+    background-image: url("./graphics/bg_tile.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    
+    
+    padding: var(--body_padding);
+    border-radius: 10px;
+    color:white;
+}
+
+body::selection {
+    color: black;
+    background-color: white;
+}
+
+body.daily_css {
+    background-color: var(--background_2);
+}
+
+body.part_1_css {
+    background-color: var(--background_2);
+}
+
+nav {
+    font-size: 1.7em;
+    background-color: var(--nav_color);
+    border: solid var(--nav_color) 10px;
+    border-radius: 10px;
+    
+    
+}
+
+a {
+    color:#df7126;
+    margin: 10px;
+    text-decoration: none;
+    font-family: "Jersey 10";
+    text-shadow: ;
+    
+}
+
+a:hover{
+    color:#fbf236;
+    
+}
+
+h1,h2, h3{
+    font-family: "Sixtyfour";
+}
+
+p{
+    font-family: "Jersey 10";
+    font-size: 24px;
+}
+
+#banner{
+    background-color: black;
+    border: ridge 15px rgb(233, 228, 174);
+    padding: 16px;
+    text-shadow:0px 0px 10px #99e550;
+    text-align: center;
+    color: #6abe30;
+    border-radius: 10px;
+    background-image: url("./graphics/scanlines.png");
+     background-size: var(--scanline_size);
+}
+
+.window-centered{
+    background-color: black;
+    border: ridge 15px rgb(233, 228, 174);
+    padding: 16px;
+    text-shadow:0px 0px 10px white;
+    text-align: center;
+    color: #6abe30;
+    border-radius: 10px;
+    background-image: url("./graphics/scanlines.png");
+    background-size: var(--scanline_size);
+}
+
+.window{
+    background-color: black;
+
+
+    border: ridge 15px rgb(233, 228, 174);
+    padding: 16px;
+    text-shadow:0px 0px 10px white;
+    text-align: left;
+    color: white;
+    border-radius: 10px;
+
+    background-image: url("./graphics/scanlines.png");
+    background-size: var(--scanline_size);
+}
+
+
+
+aside a{
+    font-size: 24px;
+}
+
+aside {
+    
+    margin: 0px;
+    width: 20%;
+    float: right;
+    background-color: black;
+    padding: 10px;
+    border-left: solid 4px #6abe30;
+}
+
+#random {
+    animation: bob 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bob {
+
+    0%{transform: translateY(5px);}
+    50%{transform: translateY(0px);}
+    100%{transform: translateY(5px);}
+    
+}
+
+main {
+    width: 70%;
+}
+
+iframe {
+    border: solid, black, 4px;
+    border-radius: 32px;
+}
