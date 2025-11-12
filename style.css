@@ -100,6 +100,8 @@ p{
     border-radius: 10px;
     background-image: url("./graphics/scanlines.png");
     background-size: var(--scanline_size);
+     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .window{
@@ -115,7 +117,12 @@ p{
 
     background-image: url("./graphics/scanlines.png");
     background-size: var(--scanline_size);
+
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
+
 
 
 
@@ -150,7 +157,32 @@ main {
     width: 70%;
 }
 
+img{
+   
+
+    width: 30%;
+    height: auto;
+}
+
+.fullscreen {
+    height: 100%;
+    width: 100%
+}
+
 iframe {
     border: solid, black, 4px;
     border-radius: 32px;
+}
+
+img{
+    border-radius: 16px;
+    filter: grayscale(35%);
+    transition: scale 0.5s, border-radius 1s, filter 0.5s;
+}
+
+img:hover{
+    scale: 1.01;
+    border-radius: 1px;
+    filter: none;
+    transition: scale 2s, border-radius 1s filter 0.5s;
 }

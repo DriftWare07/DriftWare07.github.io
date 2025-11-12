@@ -1,0 +1,45 @@
+<!-- 
+
+Name: R. Alex Swearingen
+Course: ITSE-1311.252
+Assignment: index_1.8b.html
+Date: 11/12/25
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            font-size: 4em;
+            background-color: lightgrey;
+        }
+
+        input[type="range"]{
+            width: 50%;
+        }
+    </style>
+    <script>
+        function updateRange(val){
+            document.getElementById("output").value = val;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Input Range Control</h1>
+        <hr>
+    </header>
+    <br>
+    <input type="range" name="a_range" id="range_1" min="0" max="1000" step="20" value="200"
+    onchange="updateRange(this.value);">
+    <hr>
+    <input type="text" id="output" size="4" placeholder="output">
+
+
+</body>
+
+</html>
