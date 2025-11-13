@@ -186,3 +186,12 @@ img:hover{
     filter: none;
     transition: scale 2s, border-radius 1s filter 0.5s;
 }
+
+button{
+    
+    margin: 0 auto;
+    width: 25%;
+    background-color: #45283c;
+    color: white;
+    border-width: 5px;
+}
