@@ -1,0 +1,46 @@
+/* Name:  R. Alex Swearingen*/
+/* Date: November 11, 2025 */
+/* Course: ITSE-1311.001 */
+/* Assignment: Part 0.63 */
+/* Credit: https://www.zybooks.com/ */
+
+:root {
+    --background-color-1: #B58C70;
+    --background-color-2: #F5985B;
+    --background-color-3: #709DA0;
+    --text-color-1: #353848;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    color: var(--text-color-1);
+    background-color: var(--background-color-1);
+}
+
+.hidden {
+    display: none;
+}
+
+.error-msg {
+    color: red;
+}
+
+.city-inputs { background-color: var(--background-color-3);}
+
+/* table, td { border : 1px solid black;}  */
+
+
+table {
+    margin-bottom: 15px;
+    border : 1px solid black;
+
+}
+
+table caption {
+    font-weight: bold;
+}
+
+table td {
+    text-align: center;
+    padding: 3px 8px;
+}

@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main HomePage</title>
+    <title>DriftWare's Homepage</title>
     <link rel="stylesheet" href="/style.css">
 
 </head>
@@ -41,17 +41,36 @@
             <li><a href="https://driftware.itch.io/elevator-panic" target="_blank">Elevator Panic</a></li>
 
             <li><a href="https://driftware.itch.io/octogame" target="_blank">Octogame</a></li>
+            
         </ul>
+
+        <p>Check out:</p>
+        <ul>
+            <li><a href="https://share.google/vbcMezWCTeDTEIHCm" target="_blank">My YouTube</a></li>
+            <li><a href="https://driftware.itch.io" target="_blank">My Itch.io</a></li>
+        </ul>
+
+        <p>Feeling Bored?</p>
+        <ul>
+            <li><a href="https://youtube.com/playlist?list=PL2UJmokgq0VbfyQj_wD8L1STC0NgGNNYR&si=Bhs0vLxWxgDKm6aG">Here's 206 videos I thought were funny (that's as many bones as you have in your body!)</a></li>
+            <li><a href="https://orteil.dashnet.org/cookieclicker/">Go play cookie clicker</a></li>
+            <li><a href="https://docs.godotengine.org/en/stable/">Read the Godot docs</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Glass_knife">Read about glass knives</a></li>
+            <li><a href="https://nothke.itch.io/tower">Throw Cubes into Brick Towers To Collapse Them</a></li>
+            
+        </ul>
+
     </aside>
 
-    <main class="window">
+    <main class="window" id="carousel">
         
         
         <img src="./graphics/20241020192400_1.jpg" class="fullscreen" id="slideshow">
 
-        
+        <div id="button-container">
         <button id="prev" onclick="changeSlide(-1)"><</button>
         <button id="next" onclick="changeSlide(1)">></button>
+        </div>
        <p id="caption">caption</p>
     
     </main>

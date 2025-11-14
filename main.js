@@ -23,13 +23,17 @@ var randomTitleArray = [
     "Never gonna give you up!",
     "Now in 3-D!",
     "The cake is a lie",
-    "insert funny quip here"
+    "insert funny quip here",
+    "you just lost The Game"
 ]
 
 //images are stored like this ["imagepath", "caption"]
 var slideShowImages = [
   ["./graphics/20241020192400_1.jpg", "Taken in Garry's Mod"],
-  ["graphics/iteration_zero.png", "Experimenting with shader nodes in blender"]
+  ["graphics/iteration_zero.png", "Experimenting with shader nodes in blender"],
+  ["graphics/unityImage.png", "Foiliage and grass experiments in Unity"],
+  ["graphics/metroidvania thumbnail.jpg", "Abandoned metroidvania project"],
+  ["graphics/prototypedesertgame.png", "Prototype psychic FPS game"]
   
 ]
 
