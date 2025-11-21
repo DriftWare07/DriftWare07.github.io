@@ -1,0 +1,75 @@
+/* Name: R. Alex Swearingen */
+/* Course: ITSE 1311.001 */
+/* Date: November 20, 2025 */
+/* Assignment: Part 0.82 -- IN Class Assignment 13 */
+
+/* ---------------------------- Style 1 ---------------------------- */
+:root {
+    --div_speed_1: 1s;
+    --div_speed_2: 2s;
+    --div_speed_3: 0.5s;
+    --div_speed_4: 0.3s;
+}
+
+html {
+    background-color: gray;
+}
+
+div {
+    /* width: 100px; */
+    transition: background-color 3s, border-color 2s;
+    width: 150px;
+    height: 90px;
+    background-color: orangered;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+
+    /* transition: border-color 3s; */
+    
+    display: block;
+    margin: 0 auto;
+}
+
+
+div:hover {
+    transition: background-color 3s, border-color 2s;
+    width: 750px;
+    background-color: orange;
+    border-width: 6px;
+    border-style: ridge;
+    border-color: yellow;
+    
+}
+
+#div1 {
+    transition: width var(--div_speed_2), background-color 3s;
+    transition-timing-function: linear;
+}
+
+#div2 {
+    transition: width var(--div_speed_2), background-color 3s;
+    transition-timing-function: ease;
+}
+
+#div3 {
+    transition: width var(--div_speed_2), background-color 3s;
+    transition-timing-function: ease-in;
+}
+
+#div4 {
+    transition: width var(--div_speed_2), background-color 3s;
+    transition-timing-function: ease-out;
+}
+
+#div5 {
+    transition: width var(--div_speed_2), background-color 3s;
+    transition-timing-function: ease-in-out;
+    
+}
+
+/*  Add this to build a flexbox container */
+#part_2 {
+                display: flex;
+                flex-wrap: wrap;
+            }

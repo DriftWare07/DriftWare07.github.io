@@ -71,3 +71,5 @@ function changeSlide(n){
 
 }
 changeSlide(0)
+
+//CRT
