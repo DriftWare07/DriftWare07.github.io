@@ -214,3 +214,14 @@ button{
 li {
     margin-bottom: 16px;
 }
+
+footer p:hover{
+    transition: scale 1s;
+    scale: 1.01;
+
+}
+
+footer p{
+    transition: scale, 0.5s;
+    scale: 1.0;
+}
