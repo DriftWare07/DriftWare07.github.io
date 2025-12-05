@@ -29,11 +29,13 @@ var randomTitleArray = [
 
 //images are stored like this ["imagepath", "caption"]
 var slideShowImages = [
+  ["graphics/Screenshot 2025-12-04 181352.png", "The splash screen of my upcoming game."],
   ["./graphics/20241020192400_1.jpg", "Taken in Garry's Mod"],
   ["graphics/iteration_zero.png", "Experimenting with shader nodes in blender"],
   ["graphics/unityImage.png", "Foiliage and grass experiments in Unity"],
   ["graphics/metroidvania thumbnail.jpg", "Abandoned metroidvania project"],
   ["graphics/prototypedesertgame.png", "Prototype psychic FPS game"]
+  
   
 ]
 
