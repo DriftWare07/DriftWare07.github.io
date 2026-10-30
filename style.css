@@ -5,21 +5,25 @@
 /* File:  Main site CSS file */
 
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Linefont:wght@4..1000&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 :root {
     --background_1: #222034;
     --background_2: lightblue;
     --background_3: lightyellow;
+    --accent: rgb(0, 255, 140);
     --nav_color: white;
     --body_padding: 10px;
     --scanline_size: 24px;
-    transform: skew(0deg, -2deg);
+    transform: skew(0deg, 0deg);
 }
 
 body {
     background-color: var(--background_1);
-    font-family: Barlow;
-    background-image: url("./graphics/bg_tile.png");
+    font-family: "DM Sans";
+    /*background-image: url("./graphics/bg_tile.png");*/
+    background-image: radial-gradient(#2f2d47,var(--background_1),var(--background_1));
+    background-size: 5px 5px;
     background-repeat: repeat;
     background-attachment: fixed;
 
@@ -57,16 +61,38 @@ marquee {
 }
 
 .horizontal-scroll {
+    
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
     overflow-x: scroll;
     overflow-y: hidden;
-
+    border-radius: 30px;
     height: 50%;
     margin-right: -60px;
     margin-left: -60px;
+    background-color: var(--background_1);
 
 }
+
+.warp{
+    animation: warp ease-in-out;
+    animation-timeline: view();
+    text-align: center;
+    ;
+}
+
+@keyframes warp {
+    0%{transform: scale(2);
+    z-index: 100;}
+    50%{transform: scale(0.5);
+    z-index: 0;
+    opacity: 0.2;
+border-radius: 30px}
+    100%{transform: scale(2);
+    z-index: 100;}
+}
+
 
 ::-webkit-scrollbar {
     background-color: black;
@@ -74,7 +100,7 @@ marquee {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: red;
+    background-color: var(--accent);
 }
 
 .listed {
@@ -100,16 +126,9 @@ a:hover {
 
 }
 
-h1,
-h2,
-h3 {
-    font-family: "Sixtyfour";
-}
 
-p {
-    font-family: "Jersey 10";
-    font-size: 24px;
-}
+
+
 
 #banner {
     margin-top: -60px;
@@ -121,11 +140,11 @@ p {
     padding-top: 64px;
 
     text-align: center;
-    color: black;
+    color: var(--accent);
     border-radius: 10px;
-    background-image: url("./graphics/scanlines.png");
+    /*background-image: url("./graphics/scanlines.png");*/
     background-blend-mode: difference;
-    background-color: red;
+    background-color: var(--background_1);
     background-size: var(--scanline_size);
     font-size: 140%;
 }
@@ -146,19 +165,19 @@ p {
 }
 
 .window {
-    background-color: black;
+  
 
-    margin: 0;
+    margin: 20px 20px;
 
-    padding: 16px;
-    padding-left: 32px;
-    text-shadow: 0px 0px 10px white;
+    padding: 30px;
+    
+    font-size: 30px;
+   
     text-align: left;
     color: white;
 
 
-    background-image: url("./graphics/scanlines.png");
-    background-size: var(--scanline_size);
+    
 
 
 
@@ -167,8 +186,8 @@ p {
 h1 {
     position: sticky;
     top: 100;
-    background-color: red;
-    color: white;
+    background-color: var(--accent);
+    color: var(--background_1);
     padding: 16px;
     margin: 0;
 
@@ -333,12 +352,7 @@ img {
     transition: scale 0.5s, border-radius 1s, filter 0.5s;
 }
 
-img:hover {
-    scale: 1.1;
-    border-radius: 1px;
 
-    transition: scale 2s, border-radius 1s filter 0.5s;
-}
 
 button {
 
